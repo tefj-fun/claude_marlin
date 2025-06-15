@@ -67,7 +67,8 @@ This MVP focuses on detecting 5 core PPE items:
 ## 🚀 Quick Start
 
 ### Prerequisites
-- Python 3.9+
+- Python 3.11 (recommended, Python 3.10 also works)
+  *Using Python 3.12 may fail to install psycopg2-binary.* 
 - Node.js 18+
 - Docker & Docker Compose
 - GPU support (recommended for ML processing)
@@ -81,7 +82,7 @@ cd claude_marlin
 ### 2. Backend Setup
 ```bash
 cd backend
-python -m venv venv
+python3.11 -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 
