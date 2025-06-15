@@ -76,7 +76,7 @@ services:
   ml_service:
     build:
       context: ./backend
-      dockerfile: Dockerfile.ml
+      dockerfile: Dockerfile
     container_name: ppe_ml
     environment:
       - REDIS_URL=redis://redis:6379
